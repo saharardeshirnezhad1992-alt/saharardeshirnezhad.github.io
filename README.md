@@ -63,6 +63,8 @@ video: "images/projects/اسم-فولدر/walkthrough.mp4",
 videoPoster: "images/projects/اسم-فولدر/walkthrough-poster.jpg",
 ```
 ویدیو به‌صورت آخرین آیتم گالری نمایش داده می‌شود و روی کارت پروژه برچسب «ویدیو» می‌آید.
+- `interior-living-room-modern` — نشیمن مدرن (۲ عکس)
+- `interior-restroom-bathroom` — سرویس بهداشتی و حمام (متن انگلیسی، lang: "en")
 - `interior-dental-clinic-zareian` — مطب دندانپزشکی (۱۱ رندر + ۶ شیت نقشه و جزئیات + PDF)
 
 ### فایل PDF برای پروژه (اختیاری)
