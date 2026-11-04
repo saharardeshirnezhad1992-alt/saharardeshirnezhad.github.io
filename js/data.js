@@ -192,6 +192,23 @@ window.SITE = {
         { label: "سال",       value: "۱۴۰۵" },
         { label: "خدمات",     value: "طراحی داخلی، نقشه‌ی اجرایی، رندر سه‌بعدی" }
       ]
+    },
+    {
+      folder: "interior",
+      title: "نشیمن مدرن با پالت کرم و نورپردازی پنهان",
+      description: "فضای نشیمن گرم و ساده با مبل کرم، میز چوبی، پنل تلویزیون با نور پنهان و ارتباط بصری با حیاط و فضای سبز. سقف نورپردازی‌شده و دیوار قوس‌دار، حس آرامش و روشنی می‌دهند.",
+      cover: "images/projects/interior-living-room-modern/01.jpg",
+      images: [
+        "images/projects/interior-living-room-modern/01.jpg",
+        "images/projects/interior-living-room-modern/02.jpg"
+      ],
+      specs: [
+        { label: "نوع پروژه", value: "نشیمن" },
+        { label: "مکان",      value: "شیراز" },
+        { label: "متراژ",     value: "۳۵ متر" },
+        { label: "سال",       value: "۱۴۰۵" },
+        { label: "خدمات",     value: "طراحی داخلی، نورپردازی، رندر سه‌بعدی" }
+      ]
     }
   ]
 };
