@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>سحر اردشیرنژاد | معماری، طراحی داخلی و مدل‌سازی سه‌بعدی</title>
+  <meta name="description" content="سحر اردشیرنژاد؛ طراحی داخلی، لندسکیپ، طراحی محوطه و طراحی معماری در شیراز.">
+  <meta name="theme-color" content="#23211e">
+  <meta property="og:title" content="سحر اردشیرنژاد | معماری و طراحی داخلی">
+  <meta property="og:image" content="images/hero-kitchen.jpg">
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800;900&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- نوار بالا -->
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#top" aria-label="سحر اردشیرنژاد">
+      <span class="nav__brand-en">Sahar</span><span class="nav__brand-sub">Ardeshirnezhad</span>
+    </a>
+    <button class="nav__toggle" id="navToggle" aria-label="منو" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav__links" id="navLinks">
+      <a href="#services">خدمات</a>
+      <a href="#portfolio">نمونه‌کارها</a>
+      <a href="#about">درباره من</a>
+      <a href="#contact" class="nav__cta">تماس</a>
+    </nav>
+  </header>
+
+  <!-- هیرو: لوگوی بزرگ + عکس آشپزخانه -->
+  <section class="hero" id="top">
+    <div class="hero__bg" id="heroBg"></div>
+    <div class="hero__shade"></div>
+    <div class="hero__inner">
+      <img class="hero__logo" id="heroLogo" alt="Sahar Ardeshirnezhad">
+      <p class="hero__title" id="heroTitle"></p>
+      <p class="hero__tagline" id="heroTagline"></p>
+      <div class="hero__actions">
+        <a class="btn btn--light" href="#portfolio">مشاهده نمونه‌کارها</a>
+        <a class="btn btn--ghost" href="#contact">دریافت مشاوره</a>
+      </div>
+    </div>
+    <a class="hero__scroll" href="#services" aria-label="پایین">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- خدمات -->
+  <section class="section" id="services">
+    <div class="wrap">
+      <header class="section__head reveal">
+        <span class="eyebrow">Services</span>
+        <h2>خدمات من</h2>
+        <p>از ایده‌ی اول تا اجرا؛ چهار حوزه‌ی تخصصی برای ساخت فضایی که شبیه شماست.</p>
+      </header>
+      <div class="services" id="servicesGrid"></div>
+    </div>
+  </section>
+
+  <!-- نمونه‌کارها -->
+  <section class="section section--sand" id="portfolio">
+    <div class="wrap">
+      <header class="section__head reveal">
+        <span class="eyebrow">Portfolio</span>
+        <h2>نمونه‌کارها</h2>
+        <p>پروژه‌ها را بر اساس فولدر ببینید و برای جزئیات و مشخصات روی هر پروژه بزنید.</p>
+      </header>
+      <div class="folders reveal" id="folderTabs" role="tablist"></div>
+      <div class="projects" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- درباره -->
+  <section class="section" id="about">
+    <div class="wrap about">
+      <div class="about__media reveal">
+        <img id="aboutImg" alt="سحر اردشیرنژاد" loading="lazy">
+        <img id="aboutImg2" class="about__media-small" alt="ماکت معماری" loading="lazy">
+      </div>
+      <div class="about__body reveal">
+        <span class="eyebrow">About</span>
+        <h2 id="aboutHeading"></h2>
+        <div id="aboutText"></div>
+        <ul class="stats" id="aboutStats"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- تماس -->
+  <section class="section contact" id="contact">
+    <div class="wrap contact__inner">
+      <header class="section__head reveal">
+        <span class="eyebrow eyebrow--light">Contact</span>
+        <h2>بیایید پروژه‌تان را شروع کنیم</h2>
+        <p>برای مشاوره و برآورد، تماس بگیرید یا پیام بدهید.</p>
+      </header>
+      <div class="contact__cards reveal" id="contactCards"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <img id="footLogo" alt="Sahar Ardeshirnezhad">
+    <p id="footText"></p>
+  </footer>
+
+  <!-- پنجره‌ی جزئیات پروژه -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <article class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+      <button class="modal__close" data-close aria-label="بستن">×</button>
+      <div class="modal__gallery">
+        <div class="modal__stage"><img id="mImg" alt=""><video id="mVideo" controls playsinline preload="metadata" hidden></video>
+          <button class="modal__nav modal__nav--prev" id="mPrev" aria-label="قبلی" hidden>›</button>
+          <button class="modal__nav modal__nav--next" id="mNext" aria-label="بعدی" hidden>‹</button></div>
+        <div class="modal__thumbs" id="mThumbs"></div>
+      </div>
+      <div class="modal__info">
+        <span class="eyebrow" id="mFolder"></span>
+        <h3 id="mTitle"></h3>
+        <p id="mDesc"></p>
+        <dl class="specs" id="mSpecs"></dl>
+        <div class="modal__actions">
+          <a class="btn btn--dark" href="#contact" data-close>درخواست پروژه‌ی مشابه</a>
+          <a class="btn btn--outline" id="mPdf" target="_blank" rel="noopener" hidden>دانلود نقشه‌ها (PDF)</a>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
